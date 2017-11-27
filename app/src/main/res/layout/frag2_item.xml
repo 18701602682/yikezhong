@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv2_touxaing"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:placeholderImage="@drawable/raw_1499936862"
+            android:layout_centerVertical="true"
+            app:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/f2_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放到"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="65dp"
+            android:textSize="18sp"
+            android:textColor="@color/new_red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4512113226564512"
+            android:layout_below="@+id/f2_tv_name"
+            android:layout_marginLeft="65dp"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_open"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="顺丰到付个电话恒大华府后返回回复
+        大户和防护的鹤顶红覅打飞机覅回合肥画法几何
+        好肚饿金凤凰黄飞鸿方法范湖"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/right_menu_pressed"/>
+</LinearLayout>

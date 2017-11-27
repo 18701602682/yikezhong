@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTopColor</item>
+        <item name="colorPrimaryDark">@color/colorTopColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <!--Activity页面跳转的主题-->
+        <item name="android:windowAnimationStyle">@style/ActivityStyle</item>
+    </style>
+
+    <style name="ActivityStyle">
+        <item name="android:activityOpenEnterAnimation">@anim/top_to_bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/top_to_bottom_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/bottom_to_top_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/bottom_to_top_out</item>
+    </style>
+
+</resources>

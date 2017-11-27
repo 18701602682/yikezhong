@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="z.com.ZuoPinActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTopColor">
+        <TextView
+            android:id="@+id/zp_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:drawableLeft="@drawable/iv_back"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/TextWhite"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的作品"
+            android:textColor="@color/TextWhite"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/zp_tablayout"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        app:tabIndicatorColor="@color/colorTopColor"
+        app:tabSelectedTextColor="@color/colorTopColor"
+        app:tabTextColor="@color/text_title_black"
+        app:tabMode="scrollable">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/zp_vp"
+        android:layout_below="@+id/zp_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

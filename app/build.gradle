@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "z.com"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "H0z8jepUiu6BDAXBw2xCL",
+                GETUI_APP_KEY   : "ymtaX1ghYJ7KjuOXstWTy7",
+                GETUI_APP_SECRET: "5YZjXbCVDU99674solscq5"
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.xhb:xbanner:1.2.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    //fresco
+    implementation 'com.facebook.fresco:fresco:1.5.0'
+    implementation project(':criclecustom')
+    implementation project(':slidingmenu')
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //个推
+    compile 'com.getui:sdk:2.11.1.0'
+    //tablayout
+    //xbanner
+    compile 'com.xhb:xbanner:1.2.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    implementation 'com.android.support:design:27.0.1'
+    //xrecyclerview
+    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+}
