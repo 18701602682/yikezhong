@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.stx.xhb.xbanner.XBanner;
 
 import java.util.ArrayList;
@@ -24,15 +25,13 @@ import z.com.R;
 public class Frag1_guanzhu extends Fragment{
 
     private View view;
-    private XBanner f_remen_banner;
-    private List<Integer> list_xbanner;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if(view==null)
         {
-            view = View.inflate(getActivity(), R.layout.frag1_remen,null);
+            view = View.inflate(getActivity(), R.layout.frag1_guanzhu,null);
         }
         return view;
     }
@@ -42,30 +41,12 @@ public class Frag1_guanzhu extends Fragment{
         super.onActivityCreated(savedInstanceState);
 
         initView();
-        initData();
     }
 
-    private void initData()
-    {
-        list_xbanner = new ArrayList<>();
-        list_xbanner.add(R.drawable.raw_1500258840);
-        list_xbanner.add(R.drawable.raw_1500258881);
-        list_xbanner.add(R.drawable.raw_1500258901);
-        list_xbanner.add(R.drawable.raw_1500259026);
-
-        f_remen_banner.setData(list_xbanner,null);
-        f_remen_banner.setPoinstPosition(XBanner.RIGHT);
-        f_remen_banner.setmAdapter(new XBanner.XBannerAdapter() {
-            @Override
-            public void loadBanner(XBanner banner, View view, int position)
-            {
-                Glide.with(getActivity()).load(list_xbanner.get(position)).into((ImageView) view);
-            }
-        });
-    }
 
     private void initView()
     {
-        f_remen_banner = view.findViewById(R.id.f_remen_banner);
+        ImageView iv_frag1_guanzhu=view.findViewById(R.id.iv_frag1_guanzhu);
+        XRecyclerView xrl_frag1_guanzhu=view.findViewById(R.id.xrl_frag1_guanzhu);
     }
 }

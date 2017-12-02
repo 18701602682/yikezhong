@@ -1,7 +1,9 @@
 package z.com;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
@@ -53,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // com.getui.demo.DemoIntentService 为第三方自定义的推送服务事件接收类
         PushManager.getInstance().registerPushIntentService(this.getApplicationContext(), DemoIntentService.class);
 
+        //ImmersionUtil.fullScreen(this);
+
         initView();
         initData();
         initMenu();
@@ -98,6 +102,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         iv_shipin.setOnClickListener(this);
         iv_touxaing.setOnClickListener(this);
         iv_bianji.setOnClickListener(this);
+
+        //显示头像(LeftFragment请求成功数据保存到sp里，这儿从sp里取出来)
+        SharedPreferences sp_icon = getSharedPreferences("sp_icon",MODE_PRIVATE);
+        String icon = sp_icon.getString("icon", "");
+        iv_touxaing.setImageURI(Uri.parse(icon));
     }
 
     private void initData()

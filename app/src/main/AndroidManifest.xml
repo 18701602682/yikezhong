@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="z.com">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -9,7 +11,6 @@
     <uses-permission android:name="android.permission.READ_LOGS" />
 
     <!-- iBeancon功能所需权限 -->
-    ;
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- 个推3.0电子围栏功能所需权限 -->
@@ -38,15 +39,20 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistActivity" />
         <activity android:name=".WriteActivity" />
+        <activity android:name=".ZuoPinActivity" />
+        <activity android:name=".SheZhiActivity" />
 
         <service
             android:name=".utils.DemoPushService"
             android:exported="true"
             android:label="PushService"
-            android:process=":pushservice"></service>
+            android:process=":pushservice" />
         <service android:name=".utils.DemoIntentService" />
 
-        <activity android:name=".ZuoPinActivity"></activity>
+        <activity android:name=".User_XiangqingActivity" />
+        <activity android:name=".DuanZiActivity" />
+        <activity android:name=".Nickname_HeadActivity" />
+        <activity android:name=".PulishSussessActivity"></activity>
     </application>
 
 </manifest>

@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorTopColor</item>
         <item name="colorPrimaryDark">@color/colorTopColor</item>
@@ -9,6 +9,8 @@
         <item name="windowNoTitle">true</item>
         <!--Activity页面跳转的主题-->
         <item name="android:windowAnimationStyle">@style/ActivityStyle</item>
+
+        <!--<item name="popupMenuStyle">@style/MyPopupWindow_anim_style</item>-->
     </style>
 
     <style name="ActivityStyle">
@@ -18,4 +20,9 @@
         <item name="android:activityCloseExitAnimation">@anim/bottom_to_top_out</item>
     </style>
 
+    <!-- PopupWindow弹出/隐藏动画 12-28 -->
+    <style name="MyPopupWindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_hidden_anim</item>
+    </style>
 </resources>

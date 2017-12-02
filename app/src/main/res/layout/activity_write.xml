@@ -39,18 +39,20 @@
         android:background="@drawable/huanghun">
 
         <ImageView
+            android:id="@+id/iv_cz_shipin"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:src="@drawable/shipin" />
+            android:src="@drawable/shi" />
         <ImageView
+            android:id="@+id/iv_cz_duanzi"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/duanzi"
+            android:src="@drawable/duan"
             android:layout_marginTop="200dp"/>
     </RelativeLayout>
 </RelativeLayout>

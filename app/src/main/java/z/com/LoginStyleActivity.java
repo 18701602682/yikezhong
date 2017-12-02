@@ -18,16 +18,6 @@ public class LoginStyleActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_style);
 
-        if(Build.VERSION.SDK_INT>=
-                Build.VERSION_CODES.KITKAT) {
-
-            //透明状态栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-            //透明导航栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
-
         initView();
     }
 

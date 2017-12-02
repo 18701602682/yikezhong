@@ -1,6 +1,7 @@
 package z.com.frag;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
@@ -12,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.dou361.ijkplayer.widget.PlayStateParams;
+import com.dou361.ijkplayer.widget.PlayerView;
 import com.stx.xhb.xbanner.XBanner;
 
 import java.util.ArrayList;
@@ -26,6 +29,7 @@ import z.com.R;
 public class Frag3_remen extends Fragment{
 
     private View view;
+
 
     @Nullable
     @Override
@@ -47,5 +51,7 @@ public class Frag3_remen extends Fragment{
 
     private void initView()
     {
+
     }
+
 }

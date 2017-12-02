@@ -76,7 +76,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/login_button1"
         android:layout_width="260dp"
         android:layout_height="45dp"
         android:layout_below="@+id/relativeLayout"
@@ -87,9 +87,10 @@
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
         android:textColor="@color/TextWhite" />
+
     <TextView
         android:id="@+id/forget_pwd"
-        android:layout_below="@+id/login_button"
+        android:layout_below="@+id/login_button1"
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
@@ -101,12 +102,13 @@
          />
     <TextView
         android:id="@+id/login_in"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
         android:text="游客登录"
+        android:gravity="center"
         android:textSize="16sp"
         android:textColor="@color/TextStyle"
         />

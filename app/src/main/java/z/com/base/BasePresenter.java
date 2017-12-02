@@ -6,7 +6,7 @@ package z.com.base;
 
 public class BasePresenter<V> {
 
-    private V mView;
+    protected V mView;
 
     public BasePresenter(V mView) {
         this.mView = mView;

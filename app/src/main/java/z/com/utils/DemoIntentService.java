@@ -9,6 +9,7 @@ import com.igexin.sdk.message.GTTransmitMessage;
 
 /**
  * Created by lenovo on 2017/11/24.
+ * 个推
  */
 
 public class DemoIntentService extends GTIntentService {

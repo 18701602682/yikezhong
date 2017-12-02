@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context="z.com.Nickname_HeadActivity">
+
+    <EditText
+        android:id="@+id/et_xg_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="请输入新昵称"/>
+
+    <Button
+        android:id="@+id/bt_xg_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:background="@color/chartreuse"
+        android:textColor="@color/comm_card_bg"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_sc_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        app:placeholderImage="@drawable/raw_1500085327"
+        app:roundAsCircle="true" />
+
+    <Button
+        android:id="@+id/bt_sc_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换头像"
+        android:background="@color/chartreuse"
+        android:textColor="@color/comm_card_bg"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

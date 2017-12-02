@@ -5,5 +5,9 @@ package z.com.base;
  *
  */
 
-public interface BaseView {
+public interface BaseView<A>{
+
+    void Success(A result);//成功
+    void data_faile(A msg);//请求数据失败
+    void faile(A msg);//失败
 }

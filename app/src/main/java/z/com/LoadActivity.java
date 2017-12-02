@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import z.com.utils.ImmersionUtil;
+
 /**
  * 引导页
  */
@@ -24,7 +26,7 @@ public class LoadActivity extends AppCompatActivity {
             {
                 Toast.makeText(LoadActivity.this, ""+time, Toast.LENGTH_SHORT).show();
             }else if(time==0){
-                Intent intent=new Intent(LoadActivity.this,LoginStyleActivity.class);
+                Intent intent=new Intent(LoadActivity.this,MainActivity.class);
                 startActivity(intent);
             }
             handler.sendEmptyMessage(100);
@@ -35,7 +37,8 @@ public class LoadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load);
 
-        handler.sendEmptyMessageDelayed(100,1000);
 
+
+        handler.sendEmptyMessageDelayed(100,1000);
     }
 }

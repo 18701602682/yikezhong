@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <com.jcodecraeer.xrecyclerview.XRecyclerView
-        android:id="@+id/f2_xrl"
+        android:id="@+id/frag2_xrl"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.jcodecraeer.xrecyclerview.XRecyclerView>

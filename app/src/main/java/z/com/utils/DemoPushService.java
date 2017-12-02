@@ -8,6 +8,7 @@ import com.igexin.sdk.GTServiceManager;
 
 /**
  * Created by lenovo on 2017/11/24.
+ * 个推
  */
 
 public class DemoPushService extends Service{

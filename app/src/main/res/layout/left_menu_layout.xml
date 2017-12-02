@@ -16,7 +16,7 @@
             android:id="@+id/iv_left_touxaing"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:placeholderImage="@drawable/raw_1499936862"
+            app:placeholderImage="@drawable/raw_1500085327"
             app:roundAsCircle="true"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="20dp"/>
@@ -61,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginBottom="15dp"
+            android:background="?android:attr/selectableItemBackground"
             android:id="@+id/rl_left1">
 
             <ImageView
@@ -186,12 +187,13 @@
             android:layout_centerVertical="true"/>
 
         <TextView
+            android:id="@+id/tv_left_ri_ye"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_marginLeft="60dp"
             android:layout_centerVertical="true"
-            android:text="我的作品"/>
+            android:text=""/>
 
         <ImageView
             android:id="@+id/iv_left_ri"

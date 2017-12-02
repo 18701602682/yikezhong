@@ -21,16 +21,6 @@ public class Forget_TwoActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget__two);
 
-        if(Build.VERSION.SDK_INT>=
-                Build.VERSION_CODES.KITKAT) {
-
-            //透明状态栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-            //透明导航栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
-
         initView();
     }
 
